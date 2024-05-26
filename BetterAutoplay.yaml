@@ -1,0 +1,8 @@
+name: Better Autoplay
+author: Kouzukii
+punchline: Automatically toggle auto-play for voiced and unvoiced cutscenes.
+description: |
+  Automatically enable auto-play (auto-advance) for voiced cutscenes and disable it for unvoiced ones.
+repo_url: "https://github.com/kouzukii/ffxiv-betterautoplay"
+tags: [auto, play, advance, autoplay, autoadvance, cutscene]
+category_tags: [ui, utility]
