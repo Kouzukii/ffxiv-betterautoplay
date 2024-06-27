@@ -28,9 +28,9 @@ public class BetterAutoplayPlugin : IDalamudPlugin {
     }
 
     public unsafe void HandleAddonTalkRefresh(AddonRefreshArgs refreshArgs) {
-        var autoAdvance = hooks.CutsceneManager_GetAutoAdvance(cutsceneAgent);
+        var autoAdvance = hooks.AgentCutscene_GetAutoAdvance(cutsceneAgent);
         if ((autoAdvance == 1) == (refreshArgs.AtkValueSpan[7].UInt == 0)) {
-            hooks.CutsceneManager_ToggleAutoAdvance(cutsceneAgent, 0, true);
+            hooks.AgentCutscene_ToggleAutoAdvance(cutsceneAgent, 0, true);
         }
     }
 }
